@@ -1,6 +1,6 @@
 organization := "org.longevityframework"
 name         := "sbt-longevity-migrations"
-version      := "0.1-SNAPSHOT"
+version      := "0.1.0"
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.4" % "test"
 
