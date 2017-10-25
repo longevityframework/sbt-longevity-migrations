@@ -10,7 +10,7 @@ crossSbtVersions   := Vector("0.13.16", "1.0.2")
 ScriptedPlugin.scriptedSettings
 scriptedBufferLog  := false
 scriptedLaunchOpts += "-Dplugin.version=" + version.value
-scriptedLaunchOpts += "-Dlongevity.version=0.26-SNAPSHOT"
+scriptedLaunchOpts += "-Dlongevity.version=0.26.0"
 
 publishMavenStyle := true
 pomIncludeRepository := { _ => false }
