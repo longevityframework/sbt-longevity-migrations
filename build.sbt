@@ -2,15 +2,15 @@ organization := "org.longevityframework"
 name         := "sbt-longevity-migrations"
 version      := "0.2-SNAPSHOT"
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.4" % "test"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % "test"
 
 sbtPlugin          := true
-crossSbtVersions   := Vector("0.13.16", "1.0.2")
+crossSbtVersions   := Vector("0.13.17", "1.1.6")
 
 ScriptedPlugin.scriptedSettings
 scriptedBufferLog  := false
 scriptedLaunchOpts += "-Dplugin.version=" + version.value
-scriptedLaunchOpts += "-Dlongevity.version=0.26.0"
+scriptedLaunchOpts += "-Dlongevity.version=0.27.0"
 
 publishMavenStyle := true
 pomIncludeRepository := { _ => false }
