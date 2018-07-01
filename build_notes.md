@@ -8,5 +8,11 @@
     `[success]`.
   - run `+scripted` to test both SBT versions we target
 - to publish:
-  - `sbt +publishSigned`
-
+  - up version in build to `x.y.0`
+  - `sbt reload`
+  - `sbt ^publishSigned`
+  - follow steps on Sonatype
+  - `git tag -s -a x.y.0 -m "create tag x.y.0"`
+  - up version in build to `x.y+1-SNAPSHOT`
+  
+  
